@@ -13,7 +13,7 @@
 
 .main-container {
   height: 90vh;
-  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .pokelist {
@@ -26,10 +26,17 @@
 }
 
 .pagination {
-  display: grid;
-  width: 100vw;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  display: flex;
   justify-content: center;
+  min-height: 100px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.pagination .paging {
+  display: grid;
+  justify-self: center;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 .pagination .button {
   justify-self: center;
