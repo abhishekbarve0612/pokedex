@@ -18,10 +18,10 @@ function App() {
         </div>
         <div className="main-container">
         <Switch>
-          <Route exact path="/:page?">
+          <Route exact path="/pokedex/:page?">
             <PokeLists />
           </Route>
-          <Route exact path="/pokemon/:id">
+          <Route exact path="/pokedex/pokemon/:id">
             <PokemonInfo />
           </Route>
         </Switch>

@@ -11,7 +11,7 @@ const ListItem = ({pokes}) => {
             {poke.name}
             </div>
             <div className="info-button">
-            <Link to={`/pokemon/${poke.name}`}>Click Here</Link>
+            <Link to={`/pokedex/pokemon/${poke.name}`}>Click Here</Link>
             </div>
             </li>
         ))}

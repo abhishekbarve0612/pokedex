@@ -36,20 +36,20 @@ const PokeLists = () => {
     <div className="pagination">
         {(page - 1) > -1 && 
           <div className="button">
-          <Link to={`/${page - 1}`}>Previous</Link>
+          <Link to={`/pokedex/${page - 1}`}>Previous</Link>
           </div>
           }
           <div className="button">
-            <Link to={`/${parseInt(page)+2}`}>{parseInt(page) + 2}</Link>
+            <Link to={`/pokedex/${parseInt(page)+2}`}>{parseInt(page) + 2}</Link>
           </div>
           <div className="button">
-            <Link to={`/${parseInt(page)+3}`}>{parseInt(page) + 3}</Link>
+            <Link to={`/pokedex/${parseInt(page)+3}`}>{parseInt(page) + 3}</Link>
           </div>
           <div className="button">
-            <Link to={`/${parseInt(page)+4}`}>{parseInt(page) + 4}</Link>
+            <Link to={`/pokedex/${parseInt(page)+4}`}>{parseInt(page) + 4}</Link>
           </div>
         <div className="button">
-          <Link to={`/${parseInt(page) + 1}`}>Next</Link>
+          <Link to={`/pokedex/${parseInt(page) + 1}`}>Next</Link>
         </div>
       </div>
     </>
