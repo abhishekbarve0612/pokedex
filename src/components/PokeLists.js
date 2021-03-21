@@ -11,7 +11,6 @@ const PokeLists = () => {
   }
   else offset = 15 * parseInt(page);
   console.log(offset);
-  page = parseInt(page);
   const API_URL = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=15`;
   const { data:pokemon, isLoading, error} = useFetch(API_URL);
   let pokes = null;
