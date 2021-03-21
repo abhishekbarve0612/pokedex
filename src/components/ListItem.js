@@ -6,7 +6,6 @@ const ListItem = ({pokes}) => {
     <div className="pokemon-lists">
         {pokes.map((poke, key) => (
           <li className="pokemon-item" id={key}>
-            <div className="sr-no">{key + 1}.</div>
             <div className="poke-name">
             {poke.name}
             </div>

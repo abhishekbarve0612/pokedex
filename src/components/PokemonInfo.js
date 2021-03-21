@@ -10,10 +10,10 @@ const PokemonInfo = () => {
       {error && <h3>{error}</h3> }
       {isLoading && <h3>Loading...</h3>}
       {info && <div className="pokemon-info">
+          <img className="poke-head" src={info.sprites.other.dream_world.front_default} alt=""/>
         <h1 className="poke-name">
           {info.name}
         </h1>
-          <img src={info.sprites.other.dream_world.front_default} alt=""/>
           <div className="description">
             <div className="info-card">
               <h3 className="data">ID</h3>

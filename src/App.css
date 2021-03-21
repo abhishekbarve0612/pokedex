@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: beige;
+  background-color: #7adfbb;
 }
 
 a {
@@ -10,7 +10,7 @@ a {
 /** Scrollbar  */
 
 * {
-  scrollbar-color: darkblue lightcyan;
+  scrollbar-color: #4c8577 #7adfbb;
   scrollbar-width: thin;
 }
 
@@ -18,9 +18,9 @@ a {
   width: 5px;
 }
 *::-webkit-scrollbar-thumb {
-  background-color: darkblue;
+  background-color: #4c8577;
 }
 
 *::-webkit-scrollbar-track {
-  background-color: lightcyan;
+  background-color: #7adfbb;
 }

@@ -1,10 +1,9 @@
 .header {
   font-family: monospace;
   font-size: xx-large;
-  border-bottom: 1px solid saddlebrown;
   text-transform: uppercase;
   height: 10vh;
-  background-color: white;
+  background-color: #a6ece0;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -17,7 +16,6 @@
 }
 
 .pokelist {
-  border: 1px solid black;
   display: flex;
   flex-direction: row;
   height: 70%;
@@ -40,33 +38,50 @@
 }
 .pagination .button {
   justify-self: center;
-  border: 1px solid black;
-  padding: 10px;
-  background-color: burlywood;
+  padding: 20px;
+  background-color: #4e6e58;
+  font-weight: bold;
 }
+
+.pagination .button:hover {
+  background-color: #a6ece0;
+}
+.pagination .button:hover > a {
+  color: #544b3d;
+}
+
 .pagination .button a {
-  color: white;
   text-transform: uppercase;
+  color: #a6ece0;
 }
 
 .pokemon-lists {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 10px;
+  gap: 40px;
   grid-auto-rows: auto;
   width: 100%;
   height: auto;
 }
 
 .pokemon-item {
+  padding: 20px 10px;
+  background-color: #4c8577;
+  color: #a6ece0;
+  box-shadow: 10px 10px 5px -1px #4e6e58;
+  -webkit-box-shadow: 10px 10px 5px -1px #4e6e58;
+  -moz-box-shadow: 10px 10px 5px -1px #4e6e58;
+  border-radius: 13px;
+}
+
+.pokemon-item {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-columns: 1fr;
   align-items: center;
   width: 100%;
   max-width: 40vw;
   height: 100px;
   padding: auto;
-  border: 1px solid black;
 }
 .pokemon-item .poke-name {
   width: auto;
@@ -75,20 +90,25 @@
   padding: 10px;
   text-transform: uppercase;
   font-weight: 700;
-  border: 1px solid black;
 }
 
 .pokemon-item .info-button {
-  border: 1px solid black;
   justify-self: center;
   margin: 20px;
-  padding: 10px;
-  background-color: cadetblue;
+  padding: 10px 20px;
+  border-radius: 12px;
+  background-color: #544b3d;
+}
+.pokemon-item .info-button:hover {
+  background-color: #4e6e58;
+  box-shadow: 10px 10px 5px -1px #544b3d;
+  -webkit-box-shadow: 10px 10px 5px -1px #544b3d;
+  -moz-box-shadow: 10px 10px 5px -1px #544b3d;
 }
 .info-button a {
   text-decoration: none;
   font-size: larger;
-  color: white;
+  color: #a6ece0;
 }
 
 .poke-info {
@@ -108,7 +128,6 @@
 }
 .description .info-card {
   padding: 10px;
-  border: 1px solid black;
   margin: 10px;
   max-height: 10vh;
   overflow-y: scroll;
@@ -132,4 +151,41 @@
   .pokemon-item {
     min-width: 80vw;
   }
+}
+
+.poke-head {
+  width: 454px;
+  height: 267px;
+  margin-top: 30px;
+
+  background: #4c8577;
+  border-radius: 1696px;
+  box-shadow: 10px 10px 5px -1px #4e6e58;
+  -webkit-box-shadow: 10px 10px 5px -1px #4e6e58;
+  -moz-box-shadow: 10px 10px 5px -1px #4e6e58;
+}
+
+.info-card {
+  border-radius: 13px;
+  background-color: #4e6e58;
+  color: #a6ece0;
+  box-shadow: 14px 4px 32px -3px rgba(0, 0, 0, 0.51);
+  -webkit-box-shadow: 14px 4px 32px -3px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: 14px 4px 32px -3px rgba(0, 0, 0, 0.51);
+}
+
+.poke-info .button {
+  margin: 30px auto;
+}
+.poke-info .button a {
+  background-color: #4e6e58;
+  padding: 20px;
+  color: #a6ece0;
+  border-radius: 7px;
+  box-shadow: 10px 10px 5px -1px #4e6e58;
+  -webkit-box-shadow: 10px 10px 5px -1px #4e6e58;
+  -moz-box-shadow: 10px 10px 5px -1px #4e6e58;
+}
+.poke-info .button:hover a {
+  background-color: #544b3d;
 }
